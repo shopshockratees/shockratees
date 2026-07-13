@@ -443,3 +443,21 @@ h3 {
   }
   .reveal { opacity: 1; transform: none; }
 }
+.product-images {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;
+margin-bottom: 18px;
+}
+
+.product-images img {
+width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+display: block;
+border-radius: 14px;
+}
+
+.product-card {
+overflow: hidden;
+}
