@@ -101,7 +101,23 @@
 <span>Root</span>
 <h3>Root Tee</h3>
 <p>Stability / force / foundation</p>
-<a class="button button-primary" href="https://buy.stripe.com/eVq3cu5iS3s2fDEdf34Ni00">Buy Root Tee</a>
+<form action="https://shockratees-backend.onrender.com/create-root-checkout" method="POST">
+  <select name="size" required>
+    <option value="">Choose size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="2XL">2XL</option>
+    <option value="3XL">3XL</option>
+    <option value="4XL">4XL</option>
+  </select>
+
+  <button class="button button-primary" type="submit">
+    Buy Root Tee
+  </button>
+</form>
 </article>
           <article class="product-card reveal" style="--accent:#ff8c42">
 <div class="product-images">
