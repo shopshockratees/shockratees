@@ -165,7 +165,35 @@
 <span>Solar Plexus</span>
 <h3>Core Charge Tee</h3>
 <p>Confidence / Will / Fire</p>
-<a class="button button-primary" href="https://buy.stripe.com/3cI6oG4eO3s2ezA0sh4Ni02">Buy Solar Plexus Tee</a>
+<form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
+  <input type="hidden" name="chakra" value="solar">
+
+  <label>
+    Color
+    <select name="color" required>
+      <option value="Gold">Gold</option>
+      <option value="White">White</option>
+    </select>
+  </label>
+
+  <label>
+    Size
+    <select name="size" required>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="2XL">2XL</option>
+      <option value="3XL">3XL</option>
+      <option value="4XL">4XL</option>
+    </select>
+  </label>
+
+  <button class="button button-primary" type="submit">
+    Buy Solar Plexus Tee
+  </button>
+</form>
 </article>
           <article class="product-card reveal" style="--accent:#ff8c42">
 <div class="product-images">
