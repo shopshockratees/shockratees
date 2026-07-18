@@ -203,7 +203,39 @@
 <span>Heart</span>
 <h3>Open Current Tee</h3>
 <p>Balance / Connection / Trust</p>
-<a class="button button-primary" href="https://buy.stripe.com/aFadR8bHgaUu3UW1wl4Ni03">Buy Heart Chakra Tee</a>
+<form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
+  <input type="hidden" name="chakra" value="heart">
+
+  <label>
+    Color
+    <select name="color" required>
+      <option value="Evergreen">Evergreen</option>
+      <option value="Leaf">Leaf</option>
+      <option value="Synthetic Green">Synthetic Green</option>
+      <option value="Olive">Olive</option>
+      <option value="Heather Grass Green">Heather Grass Green</option>
+      <option value="White">White</option>
+    </select>
+  </label>
+
+  <label>
+    Size
+    <select name="size" required>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="2XL">2XL</option>
+      <option value="3XL">3XL</option>
+      <option value="4XL">4XL</option>
+    </select>
+  </label>
+
+  <button class="button button-primary" type="submit">
+    Buy Heart Chakra Tee
+  </button>
+</form>
 </article>
           <article class="product-card reveal" style="--accent:#ff8c42">
 <div class="product-images">
