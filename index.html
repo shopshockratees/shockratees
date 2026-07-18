@@ -305,7 +305,27 @@
 <span>Crown</span>
 <h3>Higher Voltage Tee</h3>
 <p>Focus / Instict / Insight</p>
-<a class="button button-primary" href="https://buy.stripe.com/7sYdR8fXwbYy0IK8YN4Ni06">Buy Crown Chakra Tee</a>
+<form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
+  <input type="hidden" name="chakra" value="crown">
+
+  <label>
+    Size
+    <select name="size" required>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="2XL">2XL</option>
+      <option value="3XL">3XL</option>
+      <option value="4XL">4XL</option>
+    </select>
+  </label>
+
+  <button class="button button-primary" type="submit">
+    Buy Crown Chakra Tee
+  </button>
+</form>
 </article> 
       </div>
     </section>
