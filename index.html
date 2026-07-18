@@ -4,19 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SHOCKRATEES | Wear Your Energy</title>
-  <meta name="description" content="Shockratees is a premium streetwear brand built around energy, identity, and bold self-expression.">
-  <link rel="canonical" href="https://shockratees.com/">
+  <meta name="description" content="Shop the Shockratees seven-chakra collection: bold energywear featuring original chakra-inspired designs and timeless wisdom.">
+  <link rel="canonical" href="https://shopshockratees.github.io/shockratees/">
   <meta name="theme-color" content="#050505">
 
-  <!-- Social previews for launch-ready SEO sharing. -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SHOCKRATEES | Wear Your Energy">
-  <meta property="og:description" content="Premium minimalist streetwear inspired by energy, identity, and expression.">
-  <meta property="og:url" content="https://shockratees.com/">
+  <meta property="og:description" content="Seven chakra-inspired tees built around energy, identity, and timeless wisdom.">
+  <meta property="og:url" content="https://shopshockratees.github.io/shockratees/">
   <meta property="og:site_name" content="SHOCKRATEES">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SHOCKRATEES | Wear Your Energy">
-  <meta name="twitter:description" content="Premium minimalist streetwear inspired by energy, identity, and expression.">
+  <meta name="twitter:description" content="Seven chakra-inspired tees built around energy, identity, and timeless wisdom.">
 
   <script type="application/ld+json">
     {
@@ -24,8 +23,8 @@
       "@type": "Brand",
       "name": "SHOCKRATEES",
       "slogan": "Wear Your Energy",
-      "url": "https://shockratees.com/",
-      "description": "Premium minimalist streetwear inspired by energy, identity, and expression."
+      "url": "https://shopshockratees.github.io/shockratees/",
+      "description": "Seven chakra-inspired tees built around energy, identity, and timeless wisdom."
     }
   </script>
   <link rel="stylesheet" href="styles.css">
@@ -42,8 +41,8 @@
       </button>
       <ul id="site-menu" class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#chakras">Chakras</a></li>
-        <li><a href="#signup">Drop Alerts</a></li>
+        <li><a href="#chakras">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -52,13 +51,13 @@
     <section id="hero" class="hero section-pad">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Premium energywear / First drop incoming</p>
+          <p class="eyebrow">The seven-chakra collection is live</p>
           <h1>SHOCKRATEES</h1>
           <p class="tagline">Wear Your Energy</p>
-          <p class="hero-text">Minimal streetwear designed for movement, aura, and presence — built to turn inner charge into outer identity.</p>
+          <p class="hero-text">Chakra-inspired streetwear that pairs bold symbolism with timeless wisdom. Choose the energy you carry into the world.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#chakras">Explore the Seven</a>
-            <a class="button button-secondary" href="#signup">Join the list</a>
+            <a class="button button-primary" href="#chakras">Shop the Collection</a>
+            <a class="button button-secondary" href="#about">Our Story</a>
           </div>
         </div>
         <div class="hero-art reveal" aria-hidden="true">
@@ -77,8 +76,8 @@
       <div class="container split">
         <p class="section-kicker reveal">The brand</p>
         <div class="section-copy reveal">
-          <h2>Built for the ones who move with intention.</h2>
-          <p>Shockratees channels the language of energy into premium everyday streetwear. Each piece is a signal: a reminder that identity is not static, expression is personal, and presence can be worn before it is spoken.</p>
+          <h2>Built for people who move with intention.</h2>
+          <p>Shockratees turns the language of energy into wearable expression. Each design combines a chakra-inspired symbol with a message chosen to reflect its meaning—because what you wear can say something before you ever speak.</p>
         </div>
       </div>
     </section>
@@ -86,55 +85,46 @@
     <section id="chakras" class="section-pad">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">Seven chakra placeholders</p>
-          <h2>First collection framework</h2>
-          <p>Placeholder product cards for the upcoming seven-energy capsule.</p>
+          <p class="section-kicker">The Seven</p>
+          <h2>Choose your energy.</h2>
+          <p>Every tee is $39.99. Select your size and color, then check out securely through Stripe. The first checkout after a quiet period may take up to 60 seconds while our secure order service wakes up.</p>
         </div>
-        <div class="product-grid" aria-label="Seven chakra product placeholders">
+
+        <div class="product-grid" aria-label="Shockratees seven-chakra collection">
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/ROOT TEE MOCKUP FRONT.jpg" alt="Shockratees Root Chakra Tee front">
-              <img src="images/products/ROOT TEE MOCKUP BACK.jpg" alt="Shockratees Root Chakra Tee back">
+              <img src="images/products/ROOT TEE MOCKUP FRONT.jpg" alt="Shockratees Root Chakra Tee front" loading="lazy">
+              <img src="images/products/ROOT TEE MOCKUP BACK.jpg" alt="Shockratees Root Chakra Tee back" loading="lazy">
             </div>
             <span>Root</span>
             <h3>Root Tee</h3>
-            <p>Stability / force / foundation</p>
+            <p>Stability / Force / Foundation</p>
             <form action="https://shockratees-backend.onrender.com/create-root-checkout" method="POST">
-              <select name="size" required>
-                <option value="">Choose size</option>
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="2XL">2XL</option>
-                <option value="3XL">3XL</option>
-                <option value="4XL">4XL</option>
-              </select>
+              <label>Size
+                <select name="size" required>
+                  <option value="">Choose size</option>
+                  <option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="2XL">2XL</option><option value="3XL">3XL</option><option value="4XL">4XL</option>
+                </select>
+              </label>
               <button class="button button-primary" type="submit">Buy Root Tee</button>
             </form>
           </article>
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/sacral tee mockup front.jpg" alt="Shockratees Sacral Chakra Tee front">
-              <img src="images/products/sacral tee mockup back.jpg" alt="Shockratees Sacral Chakra Tee back">
+              <img src="images/products/sacral tee mockup front.jpg" alt="Shockratees Sacral Chakra Tee front" loading="lazy">
+              <img src="images/products/sacral tee mockup back.jpg" alt="Shockratees Sacral Chakra Tee back" loading="lazy">
             </div>
             <span>Sacral</span>
             <h3>Flow State Tee</h3>
-            <p>Creation /Rythym / Desire</p>
+            <p>Creation / Rhythm / Desire</p>
             <form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
               <input type="hidden" name="chakra" value="sacral">
               <label>Color
-                <select name="color" required>
-                  <option value="Burnt Orange">Burnt Orange</option>
-                  <option value="White">White</option>
-                </select>
+                <select name="color" required><option value="Burnt Orange">Burnt Orange</option><option value="White">White</option></select>
               </label>
               <label>Size
-                <select name="size" required>
-                  <option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="2XL">2XL</option><option value="3XL">3XL</option><option value="4XL">4XL</option>
-                </select>
+                <select name="size" required><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="2XL">2XL</option><option value="3XL">3XL</option><option value="4XL">4XL</option></select>
               </label>
               <button class="button button-primary" type="submit">Buy Sacral Tee</button>
             </form>
@@ -142,8 +132,8 @@
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/solar plexus mockup front.jpg" alt="Shockratees Solar Plexus Chakra Tee front">
-              <img src="images/products/solar plexus mockup back.jpg" alt="Shockratees Solar Plexus Chakra Tee back">
+              <img src="images/products/solar plexus mockup front.jpg" alt="Shockratees Solar Plexus Chakra Tee front" loading="lazy">
+              <img src="images/products/solar plexus mockup back.jpg" alt="Shockratees Solar Plexus Chakra Tee back" loading="lazy">
             </div>
             <span>Solar Plexus</span>
             <h3>Core Charge Tee</h3>
@@ -162,8 +152,8 @@
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/heart chakra mockup front.jpg" alt="Shockratees Heart Chakra Tee front">
-              <img src="images/products/heart chakra mockup back.jpg" alt="Shockratees Heart Chakra Tee back">
+              <img src="images/products/heart chakra mockup front.jpg" alt="Shockratees Heart Chakra Tee front" loading="lazy">
+              <img src="images/products/heart chakra mockup back.jpg" alt="Shockratees Heart Chakra Tee back" loading="lazy">
             </div>
             <span>Heart</span>
             <h3>Open Current Tee</h3>
@@ -182,8 +172,8 @@
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/throat chakra mockup front.jpg" alt="Shockratees Throat Chakra Tee front">
-              <img src="images/products/throat chakra mockup back.jpg" alt="Shockratees Throat Chakra Tee back">
+              <img src="images/products/throat chakra mockup front.jpg" alt="Shockratees Throat Chakra Tee front" loading="lazy">
+              <img src="images/products/throat chakra mockup back.jpg" alt="Shockratees Throat Chakra Tee back" loading="lazy">
             </div>
             <span>Throat</span>
             <h3>Voice Wave Tee</h3>
@@ -199,10 +189,10 @@
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/third eye mockup front.jpg" alt="Shockratees Third Eye Chakra Tee front">
-              <img src="images/products/third eye mockup back.jpg" alt="Shockratees Third Eye Chakra Tee back">
+              <img src="images/products/third eye mockup front.jpg" alt="Shockratees Third Eye Chakra Tee front" loading="lazy">
+              <img src="images/products/third eye mockup back.jpg" alt="Shockratees Third Eye Chakra Tee back" loading="lazy">
             </div>
-            <span>Third eye</span>
+            <span>Third Eye</span>
             <h3>Vision Pulse Tee</h3>
             <p>Focus / Instinct / Insight</p>
             <form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
@@ -216,8 +206,8 @@
 
           <article class="product-card reveal" style="--accent:#ff8c42">
             <div class="product-images">
-              <img src="images/products/crown mockup front.jpg" alt="Shockratees Crown Chakra Tee front">
-              <img src="images/products/crown mockup back.jpg" alt="Shockratees Crown Chakra Tee back">
+              <img src="images/products/crown mockup front.jpg" alt="Shockratees Crown Chakra Tee front" loading="lazy">
+              <img src="images/products/crown mockup back.jpg" alt="Shockratees Crown Chakra Tee back" loading="lazy">
             </div>
             <span>Crown</span>
             <h3>Higher Voltage Tee</h3>
@@ -234,18 +224,13 @@
       </div>
     </section>
 
-    <section id="signup" class="signup section-pad">
+    <section id="contact" class="signup section-pad">
       <div class="container signup-panel reveal">
         <div>
-          <p class="section-kicker">Drop alerts</p>
-          <h2>Get first access when the energy lands.</h2>
+          <p class="section-kicker">Questions or order support</p>
+          <h2>Talk directly to Shockratees.</h2>
         </div>
-        <form class="signup-form" novalidate>
-          <label class="sr-only" for="email">Email address</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-          <button class="button button-primary" type="submit">Notify me</button>
-          <p class="form-message" role="status" aria-live="polite"></p>
-        </form>
+        <a class="button button-primary" href="mailto:ShopShockratees@gmail.com">Email ShopShockratees@gmail.com</a>
       </div>
     </section>
   </main>
@@ -253,11 +238,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <p>© <span id="year"></span> SHOCKRATEES. Wear Your Energy.</p>
-      <ul class="social-links" aria-label="Social placeholders">
-        <li><a href="#" aria-label="Instagram placeholder">Instagram</a></li>
-        <li><a href="#" aria-label="TikTok placeholder">TikTok</a></li>
-        <li><a href="#" aria-label="X placeholder">X</a></li>
-      </ul>
+      <a href="mailto:ShopShockratees@gmail.com">Contact</a>
     </div>
   </footer>
 
