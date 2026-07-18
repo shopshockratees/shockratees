@@ -245,7 +245,27 @@
 <span>Throat</span>
 <h3>Voice Wave Tee</h3>
 <p>Truth / Clarity / Sound</p>
-<a class="button button-primary" href="https://buy.stripe.com/4gMcN47r0faKezAa2R4Ni04">Buy Throat Chakra Tee</a>
+<form action="https://shockratees-backend.onrender.com/create-checkout" method="POST">
+  <input type="hidden" name="chakra" value="throat">
+
+  <label>
+    Size
+    <select name="size" required>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="2XL">2XL</option>
+      <option value="3XL">3XL</option>
+      <option value="4XL">4XL</option>
+    </select>
+  </label>
+
+  <button class="button button-primary" type="submit">
+    Buy Throat Chakra Tee
+  </button>
+</form>
 </article>
           <article class="product-card reveal" style="--accent:#ff8c42">
 <div class="product-images">
