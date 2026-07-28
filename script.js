@@ -45,13 +45,42 @@ if (checkoutState === 'success' || checkoutState === 'cancelled') {
   if (value) localStorage.setItem(`shockratees_${key}`, value);
 });
 
+const CHECKOUT_URL = 'https://shockratees-backend.onrender.com/create-checkout';
+
+// Keep every product on the same POST checkout pipeline. This preserves the
+// selected chakra, color, and size for Stripe and automated Printify fulfillment.
 document.querySelectorAll('.product-card form').forEach((form) => {
-  form.addEventListener('submit', () => {
+  form.method = 'POST';
+  form.action = CHECKOUT_URL;
+
+  const card = form.closest('.product-card');
+  const heading = card?.querySelector('h3')?.textContent?.trim().toLowerCase() || '';
+  let chakraInput = form.querySelector('input[name="chakra"]');
+
+  if (!chakraInput && heading === 'root tee') {
+    chakraInput = document.createElement('input');
+    chakraInput.type = 'hidden';
+    chakraInput.name = 'chakra';
+    chakraInput.value = 'root';
+    form.prepend(chakraInput);
+  }
+
+  form.addEventListener('submit', (event) => {
+    if (!form.reportValidity()) {
+      event.preventDefault();
+      return;
+    }
+
     const button = form.querySelector('button[type="submit"]');
-    if (!button || button.disabled) return;
+    if (!button || button.disabled) {
+      event.preventDefault();
+      return;
+    }
+
     button.disabled = true;
     button.dataset.originalText = button.textContent;
     button.textContent = 'Opening secure checkout…';
+
     window.setTimeout(() => {
       button.disabled = false;
       button.textContent = button.dataset.originalText || 'Buy Tee';
