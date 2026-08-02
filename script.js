@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 0.6 seconds
-Output:
 // Progressive enhancements for the Shockratees storefront.
 const header = document.querySelector('.site-header');
 const navToggle = document.querySelector('.nav-toggle');
@@ -40,7 +37,7 @@ if (checkoutState === 'success' || checkoutState === 'cancelled') {
   notice.className = 'checkout-notice';
   notice.setAttribute('role', 'status');
   notice.textContent = checkoutState === 'success'
-    ? 'Payment received. Thank you for backing Shockrateesâ€”watch your email for order updates.'
+    ? 'Payment received. Thank you for backing Shockratees—watch your email for order updates.'
     : 'Checkout was cancelled. Nothing was charged, and your selection is still here.';
   document.body.prepend(notice);
   window.history.replaceState({}, '', window.location.pathname + window.location.hash);
@@ -87,7 +84,7 @@ document.querySelectorAll('.product-card form').forEach((form) => {
     button.disabled = true;
     form.setAttribute('aria-busy', 'true');
     button.dataset.originalText = button.textContent;
-    button.textContent = 'Opening secure checkoutâ€¦';
+    button.textContent = 'Opening secure checkout…';
 
     window.setTimeout(() => {
       button.disabled = false;
