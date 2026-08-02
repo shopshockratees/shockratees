@@ -12,17 +12,22 @@
   <meta property="og:description" content="Veteran-owned chakra-inspired streetwear built from survival, love, and a refusal to quit.">
   <meta property="og:url" content="https://shopshockratees.github.io/shockratees/">
   <meta property="og:site_name" content="SHOCKRATEES">
+  <meta property="og:image" content="https://shopshockratees.github.io/shockratees/images/products/ROOT%20TEE%20MOCKUP%20FRONT.jpg">
+  <meta property="og:image:alt" content="Shockratees Root Chakra Tee">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SHOCKRATEES | Wear Your Energy">
   <meta name="twitter:description" content="Seven chakra-inspired tees. Veteran-owned. Built under pressure. Made with purpose.">
+  <meta name="twitter:image" content="https://shopshockratees.github.io/shockratees/images/products/ROOT%20TEE%20MOCKUP%20FRONT.jpg">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Brand","name":"SHOCKRATEES","slogan":"Wear Your Energy","url":"https://shopshockratees.github.io/shockratees/","description":"Veteran-owned chakra-inspired streetwear created by John and Marcy."}
   </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v2.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement" role="status">Made to order • Secure checkout • Veteran-owned</div>
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand-mark" href="#hero">SHOCKRATEES</a>
@@ -37,14 +42,29 @@
     <section id="hero" class="hero section-pad">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Veteran-owned • Built under pressure • Made with purpose</p>
+          <p class="eyebrow">The journey from survival to understanding</p>
           <h1>SHOCKRATEES</h1>
           <p class="tagline">Wear Your Energy.</p>
-          <p class="hero-text">Seven chakra-inspired tees created by John and Marcy from survival, love, ancient symbolism, and the decision to keep building when life gave us every reason to stop.</p>
+          <p class="hero-text">Seven chakra-inspired tees. Seven stages of the human climb—from finding your ground to finding understanding. Created by John and Marcy from survival, love, and the decision to keep building.</p>
           <div class="hero-actions"><a class="button button-primary" href="#collection">Shop the Collection</a><a class="button button-secondary" href="#story">Meet the Founders</a></div>
           <ul class="trust-row" aria-label="Store benefits"><li>Secure Stripe checkout</li><li>Made to order</li><li>Veteran-owned</li></ul>
         </div>
         <div class="hero-art reveal" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="energy-card"><span>01</span><strong>RESILIENCE</strong><small>Pressure into purpose</small></div></div>
+      </div>
+    </section>
+
+    <section class="journey section-pad" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">The Shockratees journey</p><h2 id="journey-title">We all start from the ground up.</h2><p>Each design marks a point in a journey every person walks in their own way. Choose the message that meets you where you are.</p></div>
+        <ol class="journey-track">
+          <li style="--accent:#d7263d"><span>01</span><strong>Root</strong><small>Survive. Find your ground.</small></li>
+          <li style="--accent:#f47a1f"><span>02</span><strong>Sacral</strong><small>Create. Choose movement.</small></li>
+          <li style="--accent:#f4c430"><span>03</span><strong>Solar</strong><small>Trust yourself. Act.</small></li>
+          <li style="--accent:#39b54a"><span>04</span><strong>Heart</strong><small>Recognize love through the wreckage.</small></li>
+          <li style="--accent:#29a9e0"><span>05</span><strong>Throat</strong><small>Speak the truth.</small></li>
+          <li style="--accent:#4054b2"><span>06</span><strong>Third Eye</strong><small>See beyond what happened.</small></li>
+          <li style="--accent:#8f5bd7"><span>07</span><strong>Crown</strong><small>Understand.</small></li>
+        </ol>
       </div>
     </section>
 
@@ -70,7 +90,7 @@
 
     <section id="collection" class="section-pad">
       <div class="container">
-        <div class="section-heading reveal"><p class="section-kicker">The seven-chakra collection</p><h2>Choose the energy you carry.</h2><p>Every standard tee is <strong>$54.99 plus shipping</strong>. Select your options, then continue to secure Stripe checkout. The checkout server may take up to 60 seconds to wake up on the first visit.</p></div>
+        <div class="section-heading reveal"><p class="section-kicker">The seven-chakra collection</p><h2>Choose the energy you carry.</h2><p>Every tee is <strong>$54.99 plus $4.99 standard shipping</strong>. Select your options, then continue to secure Stripe checkout. Your shirt is made specifically for you.</p></div>
         <div class="product-grid" aria-label="Seven chakra shirts">
           <article class="product-card reveal" style="--accent:#d7263d"><div class="product-images"><img loading="lazy" src="images/products/ROOT TEE MOCKUP FRONT.jpg" alt="Shockratees Root Chakra Tee front"><img loading="lazy" src="images/products/ROOT TEE MOCKUP BACK.jpg" alt="Shockratees Root Chakra Tee back"></div><span>Root • Muladhara</span><h3>Root Tee</h3><p>Stability / Force / Foundation</p><p class="meaning">A reminder to stay grounded when the world pulls at you.</p><form action="https://shockratees-backend.onrender.com/create-root-checkout" method="POST"><label>Size<select name="size" required><option value="">Choose size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option><option>4XL</option></select></label><button class="button button-primary" type="submit">Buy Root Tee — $54.99</button></form></article>
 
@@ -94,11 +114,15 @@
       <details><summary>How long does checkout take?</summary><p>The first checkout request may take up to 60 seconds while our secure server wakes up. Please click once and allow the page to load.</p></details>
       <details><summary>What is the return policy?</summary><p>Damaged, defective, or incorrectly printed items are eligible for replacement or refund. Because each item is made to order, ordinary sizing mistakes and buyer’s remorse are handled case by case. Contact us and we will treat you fairly.</p></details>
       <details><summary>How do I choose a size?</summary><p>Use your normal unisex T-shirt size. When between sizes, choose the larger size for a more relaxed fit.</p></details>
+      <details><summary>When will my shirt ship?</summary><p>Because each shirt is made to order, production happens before shipping. Tracking details are sent by email as soon as your order is on the way.</p></details>
+      <details><summary>Is checkout secure?</summary><p>Yes. Payment is processed by Stripe. Shockratees never sees or stores your full card number.</p></details>
     </div></div></section>
 
     <section id="contact" class="signup section-pad"><div class="container signup-panel reveal"><div><p class="section-kicker">Questions or order support</p><h2>We built this ourselves, and we stand behind it ourselves.</h2><p>For sizing, order issues, or anything else, email John and Marcy directly.</p></div><a class="button button-primary" href="mailto:ShopShockratees@gmail.com">ShopShockratees@gmail.com</a></div></section>
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><div><strong>SHOCKRATEES</strong><p>Wear Your Energy.</p></div><p>© <span id="year"></span> Shockratees. Veteran-owned. All rights reserved.</p></div></footer>
+  <a class="mobile-shop" href="#collection">Shop the seven</a>
 </body>
 </html>
+

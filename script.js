@@ -1,9 +1,4 @@
 // Progressive enhancements for the Shockratees storefront.
-const extraStyles = document.createElement('link');
-extraStyles.rel = 'stylesheet';
-extraStyles.href = 'v2.css';
-document.head.appendChild(extraStyles);
-
 const header = document.querySelector('.site-header');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -27,6 +22,14 @@ navLinks?.addEventListener('click', (event) => {
   }
 });
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    navLinks?.classList.remove('is-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.focus();
+  }
+});
+
 const params = new URLSearchParams(window.location.search);
 const checkoutState = params.get('checkout');
 if (checkoutState === 'success' || checkoutState === 'cancelled') {
@@ -37,6 +40,7 @@ if (checkoutState === 'success' || checkoutState === 'cancelled') {
     ? 'Payment received. Thank you for backing Shockratees—watch your email for order updates.'
     : 'Checkout was cancelled. Nothing was charged, and your selection is still here.';
   document.body.prepend(notice);
+  window.history.replaceState({}, '', window.location.pathname + window.location.hash);
 }
 
 // Preserve campaign information locally so Facebook and social traffic can be identified later.
@@ -78,11 +82,13 @@ document.querySelectorAll('.product-card form').forEach((form) => {
     }
 
     button.disabled = true;
+    form.setAttribute('aria-busy', 'true');
     button.dataset.originalText = button.textContent;
     button.textContent = 'Opening secure checkout…';
 
     window.setTimeout(() => {
       button.disabled = false;
+      form.removeAttribute('aria-busy');
       button.textContent = button.dataset.originalText || 'Buy Tee';
     }, 70000);
   });
@@ -102,3 +108,4 @@ if ('IntersectionObserver' in window) {
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
