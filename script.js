@@ -49,10 +49,9 @@ if (checkoutState === 'success' || checkoutState === 'cancelled') {
   if (value) localStorage.setItem(`shockratees_${key}`, value);
 });
 
-// Current launch price: $39.99. Keep the visible storefront price synchronized
-// with the Stripe checkout price while the static HTML is being refreshed.
+// Launch price: $29.99. Keep the visible storefront synchronized with checkout.
 document.querySelectorAll('.product-card button, .section-heading strong').forEach((element) => {
-  element.textContent = element.textContent.replace(/\$54\.99/g, '$39.99');
+  element.textContent = element.textContent.replace(/\$54\.99|\$39\.99/g, '$29.99');
 });
 
 const CHECKOUT_URL = 'https://shockratees-backend.onrender.com/create-checkout';
